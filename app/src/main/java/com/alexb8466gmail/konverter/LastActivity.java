@@ -16,8 +16,8 @@ public class LastActivity extends Activity {
         super.onCreate(savedInstanceBundle);
         setContentView(R.layout.last_activity);
         TextView add_count = (TextView) findViewById(R.id.count);
-        MainActivity parrots = new MainActivity();
-        add_count.setText("Количество попугаев :" + parrots.getParrots());
+
+        add_count.setText("Количество попугаев :" + getIntent().getExtras().getInt("parrots"));
     }
 
     public void btn_Back(View view) {

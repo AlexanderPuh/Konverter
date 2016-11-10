@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public static int parrots;
+    private int parrots;
     private EditText edit_pparots;
 
     @Override
@@ -20,23 +20,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnParrotsClick(View view) {
-        try {
+
             if ((Integer.valueOf(edit_pparots.getText().toString()) < 0) || ((Integer.valueOf(edit_pparots.getText().toString()) > 100))) {
                 Toast toast = Toast.makeText(getApplicationContext(), "Значение не правильное. Выполните попытку снова.", Toast.LENGTH_LONG);
                 toast.show();
             } else {
                 parrots = Integer.valueOf(edit_pparots.getText().toString());
                 Intent intent = new Intent(this, LastActivity.class);
+                intent.putExtra("parrots", parrots);
                 startActivity(intent);
 
             }
-        } catch (Exception ex) {
-            Toast toast = Toast.makeText(getApplicationContext(), "Вы ввели некорректные символы", Toast.LENGTH_LONG);
-            toast.show();
-        }
+
     }
 
-    public int getParrots() {
+   /*public int getParrots() {
         return parrots;
-    }
+    }*/
 }

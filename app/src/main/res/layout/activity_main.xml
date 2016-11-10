@@ -36,7 +36,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="@string/propmpt_parrots"
-        android:inputType="textPersonName" />
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/enter_parrots"
