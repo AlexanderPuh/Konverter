@@ -11,10 +11,10 @@
     tools:context="com.alexb8466gmail.konverter.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_condition_count_parrots"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/edit_parrots"
+        android:layout_above="@+id/et_parrots"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="15dp"
@@ -25,10 +25,10 @@
         android:textStyle="normal|bold|italic" />
 
     <EditText
-        android:id="@+id/edit_parrots"
+        android:id="@+id/et_parrots"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/enter_parrots"
+        android:layout_alignBottom="@+id/btn_parrots"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="52dp"
         android:backgroundTint="@color/colorAccent"
@@ -36,16 +36,16 @@
         android:ems="10"
         android:gravity="center"
         android:hint="@string/propmpt_parrots"
-        android:inputType="phone" />
+        android:inputType="number" />
 
     <Button
-        android:id="@+id/enter_parrots"
+        android:id="@+id/btn_parrots"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="195dp"
         android:backgroundTint="@android:color/holo_green_light"
-        android:onClick="OnParrotsClick"
-        android:text="@string/Send" />
+        android:onClick="onParrotsClick"
+        android:text="@string/send" />
 </RelativeLayout>

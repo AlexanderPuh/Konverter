@@ -3,8 +3,9 @@
     <string name="propmpt_parrots">Ввод кол-ва попугаев</string>
     <string name="view_task">Введите количество попугаев, при условии, что их должно быть больше 0 и меньше 100</string>
     <string name="send_parrots">parrots</string>
-    <string name="Back">Назад</string>
-    <string name="count" />
-    <string name="Send">Отправить</string>>
+    <string name="back">Назад</string>
+    <string name="send">Отправить</string>
+    <string name="error_value_parrots">Значение не правильное. Выполните попытку снова.</string>
+    <string name="count_parrots">Количество попугаев :</string>
 
 </resources>
